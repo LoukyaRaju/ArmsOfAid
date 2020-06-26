@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body{
+    margin: 0;
+    padding: 0;
+    background: url(https://ksr-ugc.imgix.net/assets/015/833/329/50deddffa74b7700b2344f350321fa9f_original.JPG?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1490588778&auto=format&frame=1&q=92&s=0d2f2402f051969c5a1e9d1c2fa8b3b7);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 400px;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 35px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+.btn 
+{
+  height: 30px;
+  width: 150px;
+  text-align: center;
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+</style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Register to Adopt</h1>
+    <form  action="adopt_registration_php.php" method="GET">
+    <p>Name</p>	
+     <input type="text" name="Name" placeholder="Enter name" required="">
+     <p>Mobile Number</p>	
+     <input type="text" name="Mobile" placeholder="Enter mobile" required="">
+     <p>Email</p>  
+     <input type="text" name="Email" placeholder="Enter email" required="">
+
+     <p>Address</p>	
+     <textarea rows="5" columns="25" name="Address"  required=""></textarea>
+     <p>Description</p>	
+     <textarea rows="5" columns="25" name="Description"></textarea><br>
+     <p>(Hint:No.of people,Age etc.)</p>
+     <br>
+     <div align="center">
+         
+
+         <input class="btn"  type="submit" name="register" style= "align:center">
+       </div>
+
+    </form>
+  </div>
+</form>
+
+</body>
+</html>

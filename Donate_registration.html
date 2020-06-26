@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+     
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-attachment: fixed;
+    width: 100%;
+  height: 100%;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 430px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 85%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.btn 
+{
+  height: 35px;
+  width: 150px;
+  text-align: center;
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+
+h1{
+    margin: 0;
+    padding: 0 0 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+</style>
+</head>
+<body   background="donation.jpg">
+  <div class="login-box">
+    <h1>Donation Section</h1>
+
+
+
+    <form action="donor_register_php.php" method="GET">
+    <p>Name</p>	
+     <input type="text" name="name" placeholder="Enter name" required>
+     <p>Contact Number</p>	
+     <input type="text" name="contact_number" placeholder="Enter Phone number" required>
+     <p>Email</p>	
+     	
+     <input type="text" name="email" placeholder="Enter email" required>
+     <p>Address</p>	
+     <textarea rows="5" cols="25" placeholder="Enter address"  name="Address" required></textarea><br>
+     
+      <p>City</p>	
+        <select name="city" required>
+      <option value="select">-----SELECT-----</option>
+      <option value="lbnagar">LBNagar</option>
+       <option value="secunderabad">Secunderabad</option>
+        <option value="uppal">Uppal</option>
+         <option value="mehidipatnam">Mehidipatnam</option>
+          <option value="abids">Abids</option>
+           <option value="kukatpally">Kukatpally</option>
+            <option value="hayathnagar">Hayathnagar</option></select><br>
+            <br>
+            <p>Description</p>	
+     <textarea rows="8" cols="45" placeholder="Write something about the item you want to donate"  name="Description"></textarea><br>
+            <p>Item to Donate</p>	
+        <select name="item"  name="item">
+      <option value="select">-----SELECT-----</option>
+      <option value="food">Food</option>
+       <option value="clothes">Clothes</option>
+        <option value="money">Money</option>
+         <option value="supplies">Supplies(Books,Stationery)</option>
+          <option value="groceries">Groceries</option>
+           <option value="others">Others</option>
+           </select>
+            <br>
+  <div align="center">
+    <br/>
+         <input class="btn"  type="submit" name="PROCEED TO DONATE" style= "align:center">
+
+        </div>
+  </div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

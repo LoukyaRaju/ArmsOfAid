@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body{
+    margin: 0;
+    padding: 0;
+    background: url(orphan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.login-box{
+    width: 430px;
+    height: 960px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+.login-box a:hover
+{
+    color: #39dc79;
+}
+</style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Register</h1>
+    <form action="org_registration_php.php" method="GET">
+    <p>Organisation Name</p>	
+     <input type="text" name="Name" placeholder="Enter name">
+     <p>Username</p>	
+     <input type="text" name="Username" placeholder="Enter name">
+     <p>Password</p>	
+     <input type="password" name="Password" placeholder="Enter password ">
+     <p>Email</p>    
+     <input type="text" name="Email" placeholder="Enter email">
+     <p>Mobile Number</p>	
+     <input type="text" name="Mobile" placeholder="Enter mobile">
+     <p>Address</p>	
+     <textarea rows="5" cols="20" name="Address"></textarea>
+     <p>City</p>
+     <select name="City" >
+         <option>--SELECT--</option>
+         <option>LB NAGAR</option>
+         <option>DILSHUKNAGAR</option>
+         <option>KOTHAPET</option>
+         <option>NAGOLE</option>
+         <option>BALAPUR</option>
+     </select><br><br>
+      <p>Your requirements</p>    
+     <textarea rows="5" cols="50" placeholder="type your organisation requirements" name="Requirements"></textarea>
+     <p>Description</p>	
+     <textarea rows="10" cols="50" placeholder="about you" name="Description"></textarea>
+    
+ <input type="submit" name="register" value="Register">
+  </div>
+</form>
+</body>
+</html>

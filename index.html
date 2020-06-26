@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+body{
+  
+	background-size: cover;
+  background-color: #33CCFF;
+	background-attachment: fixed;
+  margin-top: 0px;
+}		
+ .header img {
+  float: left;
+  width: 200px;
+  height: 100px;
+  background: #555;
+  position: relative;
+  border-radius: 20px;
+}
+}
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+.header1 {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/*navigation*/
+.navigation{
+  margin: 0px;
+  top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav {
+
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  bottom: 100px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.4);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  top: 30px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+	top: 50px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  } 
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* animation code*/
+.animation1{box-sizing:10% border-box;}
+
+img {vertical-align: middle;};
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 550px;
+  max-width: 150px;
+  position: relative;
+  margin-right:  10px;
+  top: 300px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+#sidebar{
+	float:left;
+	width:31%;
+  height: 500px;
+  background-color:#ffffff;
+    color:#333;
+	padding:10px;
+	box-sizing: border-box;
+	border-right-width: 30px;
+	background-repeat: no-repeat;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+  text-decoration: underline;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  size: 30px;
+  border-radius: 20px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: lightgreen;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+	</style>
+</head>
+<body  background="homepage_bg_image.jpg"> <!--logo-->
+<div class="header">
+  <img src="arms.jpg" alt="logo" style="width: 50%; "/>
+  
+  <div class="header1">
+  <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</div>
+ <!-- navigation-->
+<div class="navigation">
+<div class="topnav" id="myTopnav">
+  <a href="organisation_list.php" >ORGANISATIONS LIST</a>
+  <a href="loginpage.html" >LOGIN</a>
+  <a href="orgregistration.html">ORGANISATION REGISTER</a>
+   <a href="about.html">ABOUT</a>
+  
+  
+  <br>
+  <br>
+     <!--animation-->
+<div class="slideshow-container" style="height: 750px">
+
+<div class="mySlides fade"  >
+  <div class="numbertext"></div>
+  <img src="slide3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="slide2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="slide4.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<div id="sidebar" style="margin-top: 50px">
+	<img src="donation02.jpg" height="60%" width="100%">
+	<h2>Donation</h2>
+			<p><b><i>"The value of a man resides in what he gives and not in what he is capable of receiving."</i></b>     
+			</p>
+		<a href="Donate_registration.html"><button class="button">Donate Now</button></a>
+
+		</div>
+		<div id="sidebar" style="margin-top: 50px">
+      <img src="homeless02.jpg" height="60%" width="100%">
+      <br>
+      <br>
+      <h2>Homeless</h2>
+
+      <p><b><i>"People who are homeless are not social inadequates. They are people without homes." </i></b>     
+      </p>
+    <a href="Homeless_registration.html"><button class="button">Make a Home</button></a>
+    </div>
+		<div id="sidebar" style="margin-top: 50px">
+			<img src="adopt02.jpg" height="60%" width="100%">
+			<br>
+			<br>
+			<h2>Adoption</h2>
+
+			<p><b><i>"Not flesh of my flesh, nor bone of my bone, but still miraculously my own. "</i></b>
+			</p>
+		<a href="adopt_registration.html"><button class="button">Adopt Now</button></a>
+
+		</div>
+		<div id="sidebar" style="margin-top: 50px">
+			<img src="event02.jpg" height="60%" width="100%">
+			<br>
+			<br>
+			<h2>Events&Campaigns</h2>
+
+			<p><b><i>"When we give cheerfully and accept gratefully, everyone is blessed. "</i></b>
+			</p>
+			<a href="events.html"><button class="button">Conduct an Event</button></a>
+		</div>
+		<div id="sidebar" style="margin-top: 50px">
+			<img src="artandcraft02.jpg" height="60%" width="100%">
+			<br>
+			<br>
+			<h2>Art Gallery</h2>
+
+			<p><b><i>"A word of encouragement during a failure is worth more than an hour of praise after success. "</i></b>
+			</p>
+			<a href="art.html"><button class="button">Encourage ideas</button></a>
+		</div>
+<div id="sidebar" style="margin-top: 50px">
+      <img src="volunteer02.jpg" height="60%" width="100%">
+      <br>
+      <br>
+      <h2>Volunteer</h2>
+
+      <p><b><i>"Volunteers don’t get paid, not because they’re worthless, but because they’re priceless." </i></b>
+      </p>
+      <a href="volunteer_register.html"><button class="button">Volunteer Now</button></a>
+
+    </div>
+		
+</body>
+</html>
+
+
+
+
